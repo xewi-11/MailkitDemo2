@@ -57,7 +57,7 @@ public class ContactController : Controller
             ";
 
             await _emailService.SendEmailAsync(
-                "javi11coimbra@gmail.com",
+                model.Email,
                 $"Contacto desde la web: {model.Name}",
                 htmlBody,
                 isHtml: true
